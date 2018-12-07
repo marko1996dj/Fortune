@@ -189,6 +189,9 @@ h1, h2, h3, h4, h5, h6 {
         color: #555555; }
         .welcome .wrap .rightText ul li i {
           color: #00b1e4; }
+    .welcome .wrap .leftImage img {
+      height: 350px;
+      width: 550px; }
   .welcome .welcomeText {
     padding-bottom: 3%;
     text-align: center;
