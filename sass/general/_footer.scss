@@ -1,0 +1,50 @@
+.footer {
+  font-size: 0.8em;
+  padding: 10px;
+  text-align: center;
+  background-color: $darkBlue;
+  height: 100px;
+  footer {
+    .copyright {
+      color: $gray;
+      padding-top: 20px;
+      span {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: $gray;
+      }
+    }
+
+    p {
+      color: $gray;
+
+      span {
+        font-size: 1.2em;
+        color: $lightBlue;
+
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .buttonUp {
+    float: right;
+    button {
+      border-radius: 3px;
+      height: 40px;
+      width: 40px;
+      color: white;
+      background-color: $lightBlue;
+      border: none;
+
+      &:hover {
+        background-color: #0c2e8a;
+        cursor: pointer;
+        transition: 0.5s ease;
+      }
+    }
+  }
+}

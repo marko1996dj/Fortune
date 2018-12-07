@@ -1,0 +1,52 @@
+.ourServices{
+  .row{
+    align-items: center;
+    height: 2px;
+    border: none;
+    background-color: $lightBlue;
+    width: 110px;
+    margin:0px 0px 30px 45%;
+  }
+  h1{
+    text-align: center;
+    font-size: 2em;
+    color: $darkBlue;
+    margin: 3% 0px 1% 0px;
+  }
+  p{
+    color: $dimGray;
+    text-align: center;
+  }
+  .wrap{
+    display: flex;
+    justify-content: space-around;
+    .marketing, .consulting, .strategy{
+      border: 1px solid #DCDCDC;
+      height: 300px;
+      text-align: center;
+      padding-top: 30px;
+      margin: 30px;
+      &:hover{
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+        animation-name: transition-animation-in;
+        animation-fill-mode: forwards;
+        animation-duration: 0.5s;
+        &:before{
+          animation-name: transition-animation-out;
+          animation-fill-mode: forwards;
+          animation-duration: 0.5s;
+        }
+      }
+    }
+
+
+      h3{
+        padding: 15px 0px;
+      }
+    }
+  img{
+    height: 90px;
+    width: 125px;
+  }
+}

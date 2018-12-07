@@ -1,0 +1,63 @@
+.container{
+  .ourTeam{
+    h1{
+      text-align: center;
+      font-size: 2em;
+      color: $darkBlue;
+      margin: 3% 0px 1% 0px;
+    }
+    .row{
+      align-items: center;
+      height: 2px;
+      border: none;
+      background-color: $lightBlue;
+      width: 110px;
+      margin:0px 0px 50px 45%;
+    }
+    .wrapper{
+      display: flex;
+      .wrap{
+        img{
+          height: 250px;
+          margin-left: 25px;
+        }
+        h3{
+          color: $darkBlue;
+          text-align: center;
+        }
+        p{
+          color: $darkBlue;
+          font-style: italic;
+          text-align: center;
+        }
+        .socialMediaWrap{
+          margin: 25px;
+          .socialMedia{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            li{
+              background-color: $lightGray;
+              color: $lightBlue;
+              height: 30px;
+              width: 30px;
+              &:hover{
+                transition: color 0.5s ease;
+                color: $darkBlue;
+                border: 1px solid $darkBlue;
+                cursor: pointer;
+              }
+              a{
+                height: 30px;
+                width: 30px;
+                i{
+                  margin: 25%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

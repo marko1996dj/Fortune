@@ -1,0 +1,82 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0%;
+  .logo {
+    h1 {
+      color: $lightBlue;
+      font-size: 1.7em;
+
+      span {
+        color: $darkBlue;
+        font-size: 0.9em;
+      }
+    }
+  }
+  .elements {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.9em;
+
+    .active {
+      color: $lightBlue;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: $dimGray;
+    }
+
+    a:hover {
+      transition: color 0.5s ease;
+      color: $lightBlue;
+    }
+
+    li {
+      padding-top: 10px;
+      padding-left: 25px;
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+  margin-right: 10px;
+  .dropbtn {
+    background-color: white;
+    color: $dimGray;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    a {
+      font-size: 0.9em;
+      color: $dimGray;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      &:hover {
+        color: $lightBlue;
+      }
+    }
+  }
+  &:hover{
+    .dropdown-content {
+      display: block;
+    }
+    .dropbtn {
+      transition: color 0.5s ease;
+      background-color: white;
+      color: $lightBlue;
+    }
+  }
+}
