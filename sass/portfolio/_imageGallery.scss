@@ -1,0 +1,30 @@
+.gallery {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3%;
+
+    .wrap {
+      img {
+        height: 297px;
+        width: 443px;
+        padding: 2px;
+        transition: transform 0.3s ease;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+.container {
+  .portflioText {
+    p {
+      text-align: center;
+      padding-top: 4%;
+    }
+  }
+}

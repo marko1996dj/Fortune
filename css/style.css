@@ -575,12 +575,7 @@ h1, h2, h3, h4, h5, h6 {
           -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s; }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.row {
+.gallery .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,90 +584,46 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  .row .column {
-    width: 440px;
-    height: 300px; }
-    .row .column img.hover-shadow {
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
-    .row .column .hover-shadow:hover {
-      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black; }
-  .modal .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 1200px; }
-    .modal .modal-content .mySlides {
-      display: none; }
-      .modal .modal-content .mySlides .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0; }
-    .modal .modal-content .next,
-    .modal .modal-content .prev {
+  flex-wrap: wrap;
+  margin: 3%; }
+  .gallery .wrapper .wrap img {
+    height: 297px;
+    width: 443px;
+    padding: 2px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+    .gallery .wrapper .wrap img:hover {
       cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      -webkit-transition: 0.6s ease;
-      -o-transition: 0.6s ease;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      -webkit-user-select: none; }
-      .modal .modal-content .next:hover,
-      .modal .modal-content .prev:hover {
-        background-color: rgba(0, 0, 0, 0.8); }
-    .modal .modal-content .next {
-      right: 0;
-      border-radius: 3px 0 0 3px; }
-    .modal .modal-content .caption-container {
-      text-align: center;
-      background-color: black;
-      padding: 2px 16px;
-      color: white; }
-    .modal .modal-content .column img.demo {
-      opacity: 0.6; }
-      .modal .modal-content .column img.demo:hover,
-      .modal .modal-content .column img.demo .active {
-        opacity: 1; }
-  .modal .close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold; }
-    .modal .close:focus, .modal .close:hover {
-      color: #999;
-      text-decoration: none;
-      cursor: pointer; }
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
+
+.container .portflioText p {
+  text-align: center;
+  padding-top: 4%; }
+
+.portfolio {
+  background-color: #00b1e4;
+  padding: 2%;
+  text-align: center;
+  font-size: 1.2em; }
+  .portfolio h1 {
+    color: white; }
+  .portfolio p {
+    color: white; }
+
+.contact {
+  background-color: #00b1e4;
+  padding: 2%;
+  text-align: center;
+  font-size: 1.2em; }
+  .contact h1 {
+    color: white; }
+  .contact p {
+    color: white; }
 
 /* Slider */
 .slick-loading .slick-list {
