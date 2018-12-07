@@ -634,7 +634,10 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   .wrapper .wrapRight .contact-us .email,
   .wrapper .wrapRight .contact-us .name {
     height: 45px;
@@ -646,15 +649,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 605px;
     border: 1px solid #a0a3a9;
     margin-bottom: 15px; }
-  .wrapper .wrapRight .contact-us .sendBtn {
+  .wrapper .wrapRight .sendBtn {
     border: none;
     border-radius: 3px;
     height: 45px;
     width: 100px;
     color: white;
-    font-weight: bold;
-    background-color: #00b1e4; }
-    .wrapper .wrapRight .contact-us .sendBtn:hover {
+    background-color: #00b1e4;
+    font-size: 1.1em; }
+    .wrapper .wrapRight .sendBtn:hover {
       -webkit-transition: color 0.5s ease;
       -o-transition: color 0.5s ease;
       transition: color 0.5s ease;

@@ -23,6 +23,9 @@
 
 .wrapper {
   display: flex;
+  justify-content: space-between;
+  .wrapLeft{
+  }
   .wrapRight {
     .contact-us {
       .email,
@@ -39,24 +42,24 @@
         border: 1px solid $gray;
         margin-bottom: 15px;
       }
+    }
+    .sendBtn {
+      border: none;
+      border-radius: 3px;
+      height: 45px;
+      width: 100px;
+      color: white;
+      background-color: $lightBlue;
+      font-size: 1.1em;
 
-      .sendBtn {
-        border: none;
-        border-radius: 3px;
-        height: 45px;
-        width: 100px;
-        color: white;
-        font-weight: bold;
-        background-color: $lightBlue;
-
-        &:hover {
-          transition: color 0.5s ease;
-          background-color: white;
-          border: 2px solid $lightBlue;
-          color: $lightBlue;
-          cursor: pointer;
-        }
+      &:hover {
+        transition: color 0.5s ease;
+        background-color: white;
+        border: 2px solid $lightBlue;
+        color: $lightBlue;
+        cursor: pointer;
       }
     }
   }
 }
+//    display: inline-flex;
