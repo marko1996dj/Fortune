@@ -1,58 +1,61 @@
-.contact{
+.contact {
   background-color: $lightBlue;
   padding: 2%;
   text-align: center;
   font-size: 1.2em;
-  h1{
+
+  h1 {
     color: white;
   }
-  p{
+
+  p {
     color: white;
   }
 }
 
-.container{
-  .contactText{
+.container {
+  .contactText {
     color: $dimGray;
     text-align: center;
     margin: 4%;
   }
 }
 
-.wrapper{
+.wrapper {
   display: flex;
-  .wrap{
-      justify-content: space-between;
-    .contact-us{
-      .name, .email{
+  .wrapRight {
+    .contact-us {
+      .email,
+      .name {
         height: 45px;
         width: 605px;
         border: 1px solid $gray;
         margin-bottom: 15px;
-
       }
-      .textBox{
+
+      .textBox {
         height: 240px;
         width: 605px;
         border: 1px solid $gray;
         margin-bottom: 15px;
-
       }
-    }
-    .sendBtn{
-      border: none;
-      border-radius: 3px;
-      height: 45px;
-      width: 100px;
-      color: white;
-      font-weight: bold;
-      background-color: $lightBlue;
-      &:hover{
-        transition: color 0.5s ease;
-        background-color: white;
-        border: 2px solid $lightBlue;
-        color: $lightBlue;
-        cursor: pointer;
+
+      .sendBtn {
+        border: none;
+        border-radius: 3px;
+        height: 45px;
+        width: 100px;
+        color: white;
+        font-weight: bold;
+        background-color: $lightBlue;
+
+        &:hover {
+          transition: color 0.5s ease;
+          background-color: white;
+          border: 2px solid $lightBlue;
+          color: $lightBlue;
+          cursor: pointer;
+        }
       }
     }
   }
