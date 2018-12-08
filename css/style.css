@@ -632,24 +632,37 @@ h1, h2, h3, h4, h5, h6 {
   margin: 4%; }
 
 .wrapper {
+  margin-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .wrapper .wrapLeft {
+    min-width: 50%; }
+    .wrapper .wrapLeft .address, .wrapper .wrapLeft .phone, .wrapper .wrapLeft .email {
+      padding-bottom: 10px;
+      font-size: .9em; }
+      .wrapper .wrapLeft .address p.bold, .wrapper .wrapLeft .phone p.bold, .wrapper .wrapLeft .email p.bold {
+        font-size: 1.1em;
+        color: #1c4450;
+        font-weight: bold;
+        padding-bottom: 20px; }
+        .wrapper .wrapLeft .address p.bold i, .wrapper .wrapLeft .phone p.bold i, .wrapper .wrapLeft .email p.bold i {
+          color: #00b1e4;
+          font-size: 1.1em; }
   .wrapper .wrapRight .contact-us .email,
   .wrapper .wrapRight .contact-us .name {
-    height: 45px;
     width: 605px;
-    border: 1px solid #a0a3a9;
+    height: 45px;
     margin-bottom: 15px; }
   .wrapper .wrapRight .contact-us .textBox {
-    height: 240px;
     width: 605px;
-    border: 1px solid #a0a3a9;
+    height: 240px;
     margin-bottom: 15px; }
   .wrapper .wrapRight .sendBtn {
+    float: right;
     border: none;
     border-radius: 3px;
     height: 45px;

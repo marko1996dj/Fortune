@@ -22,28 +22,44 @@
 }
 
 .wrapper {
+  margin-bottom: 5%;
   display: flex;
   justify-content: space-between;
   .wrapLeft{
+    min-width: 50%;
+    .address, .phone, .email{
+      padding-bottom: 10px;
+      font-size: .9em;
+      p.bold{
+        font-size: 1.1em;
+        color: #1c4450;
+        font-weight: bold;
+        padding-bottom: 20px;
+        i{
+          color: $lightBlue;
+          font-size: 1.1em;
+        }
+      }
+    }
   }
+
   .wrapRight {
     .contact-us {
       .email,
       .name {
-        height: 45px;
         width: 605px;
-        border: 1px solid $gray;
+        height: 45px;
         margin-bottom: 15px;
       }
 
       .textBox {
-        height: 240px;
         width: 605px;
-        border: 1px solid $gray;
+        height: 240px;
         margin-bottom: 15px;
       }
     }
     .sendBtn {
+      float: right;
       border: none;
       border-radius: 3px;
       height: 45px;
@@ -60,6 +76,6 @@
         cursor: pointer;
       }
     }
+
   }
 }
-//    display: inline-flex;
