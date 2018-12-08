@@ -57,13 +57,18 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: height 0.5s ease;
   -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
-  margin-top: -50px;
+  margin-top: -43px;
   position: fixed;
   min-height: 100px; }
 
 #navBarWrapper {
-  -webkit-box-shadow: 0 20px 10px -10px gray;
-  box-shadow: 0 20px 10px -10px gray;
+  -webkit-box-shadow: 0 15px 10px -10px gray;
+  box-shadow: 0 15px 10px -10px gray;
+  -webkit-transition: -webkit-box-shadow 5s ease !important;
+  transition: -webkit-box-shadow 5s ease !important;
+  -o-transition: box-shadow 5s ease !important;
+  transition: box-shadow 5s ease !important;
+  transition: box-shadow 5s ease, -webkit-box-shadow 5s ease !important;
   width: 100%;
   height: 100px;
   background-color: white; }
