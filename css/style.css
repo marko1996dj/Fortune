@@ -30,13 +30,28 @@
   margin: 0% 20%; }
 
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
 
-.topBar {
-  font-family: "Open Sans", sans-serif; }
+.navBar {
+  font-family: "Raleway", sans-serif; }
+
+.welcome {
+  font-family: "Raleway", sans-serif; }
+
+.aboutUs p {
+  font-family: "Montserrat", sans-serif; }
+
+.services p {
+  font-family: "Montserrat", sans-serif; }
+
+.portfolio p {
+  font-family: "Montserrat", sans-serif; }
+
+.contact p {
+  font-family: "Montserrat", sans-serif; }
 
 .navBar {
   display: -webkit-box;
@@ -517,6 +532,44 @@ h1, h2, h3, h4, h5, h6 {
           width: 30px; }
           .container .ourTeam .wrapper .wrap .socialMediaWrap .socialMedia li a i {
             margin: 25%; }
+
+.aboutWelcome {
+  margin: 4% 0px; }
+  .aboutWelcome .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .aboutWelcome .wrap .rightText p {
+      font-size: 1.1em;
+      color: black;
+      padding-bottom: 25px; }
+      .aboutWelcome .wrap .rightText p strong {
+        font-size: 1em; }
+    .aboutWelcome .wrap .rightText .light {
+      color: #555555; }
+    .aboutWelcome .wrap .rightText .italicText {
+      font-weight: lighter;
+      font-style: italic;
+      font-size: 1.14em;
+      font-family: "Montserrat", sans-serif;
+      color: #a0a3a9; }
+    .aboutWelcome .wrap .rightText ul {
+      list-style-type: none; }
+      .aboutWelcome .wrap .rightText ul li {
+        margin: 5px;
+        color: #555555; }
+        .aboutWelcome .wrap .rightText ul li i {
+          color: #00b1e4; }
+    .aboutWelcome .wrap .leftImage img {
+      height: 350px;
+      width: 550px; }
+  .aboutWelcome .welcomeText {
+    padding-bottom: 3%;
+    text-align: center;
+    color: #555555; }
 
 .services {
   background-color: #00b1e4;

@@ -1,0 +1,48 @@
+.aboutWelcome{
+  margin: 4% 0px;
+  .wrap{
+    display: flex;
+    justify-content: space-between;
+    .rightText{
+      p{
+        font-size: 1.1em;
+        color: black;
+        strong{
+          font-size: 1em;
+        }
+        padding-bottom: 25px;
+      }
+      .light{
+        color: $dimGray;
+      }
+      .italicText{
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 1.14em;
+        font-family: "Montserrat", sans-serif;
+        color: $gray;
+      }
+      ul{
+        list-style-type: none;
+        li{
+          margin: 5px;
+          color: $dimGray;
+          i{
+            color: $lightBlue;
+          }
+        }
+      }
+    }
+    .leftImage{
+      img{
+        height: 350px;
+        width: 550px;
+      }
+    }
+  }
+  .welcomeText{
+    padding-bottom: 3%;
+    text-align: center;
+    color: $dimGray;
+  }
+}
