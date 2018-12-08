@@ -1,3 +1,4 @@
+// GMaps Start
 function myMap() {
 var mapProp= {
     center:new google.maps.LatLng(51.508742,-0.120850),
@@ -5,6 +6,12 @@ var mapProp= {
 };
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
+// Gmaps End
 
-
-//AIzaSyDHJ0P_hhqvPoqJD3pSRz6nEK9DUnyeSsI
+// Slick function
+// $(document).ready(function(){
+//   $('.your-class').slick({
+//     setting-name: setting-value
+//   });
+// });
+// Slick function end 
