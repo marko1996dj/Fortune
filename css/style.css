@@ -466,7 +466,8 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-appearance: none;
       margin-left: 70%;
       height: 90px;
-      width: 320px; }
+      width: 320px;
+      font-size: 2em; }
     .getOurService .wrapper .wrap p {
       display: none; } }
 
@@ -634,7 +635,8 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 8em;
       padding-bottom: 50px; }
     .inspire h3 {
-      font-size: 2em; }
+      font-size: 3em;
+      margin-left: -6%; }
     .inspire #btn {
       font-size: 2em;
       height: 90px;
