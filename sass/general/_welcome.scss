@@ -52,7 +52,7 @@
 @include phone(){
   .welcome{
     h1{
-      font-size: 4em;
+      font-size: 5em;
     }
     .wrap{
       display: block;
@@ -60,6 +60,7 @@
         text-align: center;
       }
       .rightText{
+        font-size: 2em;
         text-align: center;
         i{
           margin-right: 30px;
@@ -69,5 +70,9 @@
         }
       }
     }
+    .welcomeText{
+      font-size: 2em;
+    }
+    margin-top: 10%;
   }
 }

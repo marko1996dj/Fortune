@@ -44,10 +44,17 @@
     width: 100%;
     text-align: center;
     h1{
-      font-size: 7em;
+      font-size: 8em;
       padding-bottom: 50px;
     }
+    h3{
+      font-size: 2em;
+    }
     #btn{
+      font-size: 2em;
+      height: 90px;
+      width: 320px;
+      -webkit-appearance: none;
       margin-top: 50px;
     }
   }

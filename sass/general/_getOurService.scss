@@ -37,13 +37,19 @@
   @include phone(){
     .getOurService{
       h1{
+        font-size: 3em;
         padding-top: 2%;
+        text-align: center;
+        margin-bottom: 5%;
       }
       .wrapper{
         display: block;
         .wrap{
           #btn{
-            margin-left: 90%;
+            -webkit-appearance: none;
+            margin-left: 70%;
+            height: 90px;
+            width: 320px;
           }
           p{
             display: none;
