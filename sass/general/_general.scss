@@ -8,7 +8,6 @@
 }
 
 .sticky {
-  transition: height 0.5s ease;
   margin-top: -43px;
   position: fixed;
   min-height: 100px;
@@ -44,8 +43,11 @@
            margin: 0% 3%;
          }
          .sticky{
-
-           position: absolute;
+           margin-top: 0px;
+           position: fixed;
+           min-height: 200px;
+           z-index: 1;
+           margin-left: -5%;
          }
          .row{
            width: 200px;
