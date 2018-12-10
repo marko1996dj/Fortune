@@ -1,5 +1,5 @@
 #navBarWrapper{
-  box-shadow: 0 15px 10px -10px gray;
+  box-shadow: 0 50px 30px -30px gray;
   transition: box-shadow 5s ease !important;
   width: 100%;
   height: 100px;
@@ -31,7 +31,6 @@
       list-style-type: none;
       display: flex;
       font-size: 0.9em;
-
       .active {
         color: $lightBlue;
       }
@@ -40,10 +39,9 @@
         text-decoration: none;
         font-weight: bold;
         color: $dimGray;
+        transition-duration: 0.5s;
       }
-
       a:hover {
-        transition: color 0.5s ease;
         color: $lightBlue;
       }
 

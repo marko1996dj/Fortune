@@ -15,7 +15,7 @@
       margin: 30px;
       width: 350px;
       color: $dimGray;
-
+      transition-duration: 0.5s;
       h3 {
         padding: 15px;
         color: $dimGray;
@@ -28,16 +28,8 @@
 
       &:hover {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-        position: relative;
-        animation-name: transition-animation-in;
-        animation-fill-mode: forwards;
-        animation-duration: 0.5s;
-
-        &:before {
-          animation-name: transition-animation-out;
-          animation-fill-mode: forwards;
-          animation-duration: 0.5s;
-        }
+        transform: translateY(-15px);
+        cursor: pointer;
       }
     }
   }

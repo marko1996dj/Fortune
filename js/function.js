@@ -14,4 +14,4 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 //     setting-name: setting-value
 //   });
 // });
-// Slick function end 
+// Slick function end

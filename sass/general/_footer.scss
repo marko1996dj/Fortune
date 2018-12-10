@@ -21,7 +21,7 @@
       span {
         font-size: 1.2em;
         color: $lightBlue;
-
+        transition-duration: 0.5s;
         &:hover {
           cursor: pointer;
           color: white;
@@ -39,11 +39,11 @@
       color: white;
       background-color: $lightBlue;
       border: none;
-
+      transition-duration: 0.5s;
       &:hover {
         background-color: #0c2e8a;
         cursor: pointer;
-        transition: 0.5s ease;
+        transform: scale(1.2);
       }
     }
   }

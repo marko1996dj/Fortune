@@ -18,9 +18,9 @@
         color: $lightBlue;
         span{
           color: $gray;
+          transition-duration: 0.5s;
         }
         span:hover{
-          transition: color 0.5s ease;
           color: $lightBlue;
           cursor: pointer;
         }
@@ -28,14 +28,17 @@
     }
   }
   .right{
+    .fab{
+      transition-duration: 0.5s;
+    }
     .socialMedia{
       list-style-type: none;
       display: flex;
     }
     .fab:hover{
-      transition: color 0.5s ease;
       color: white;
       cursor: pointer;
+      transform: scale(1.2);
     }
   }
 }

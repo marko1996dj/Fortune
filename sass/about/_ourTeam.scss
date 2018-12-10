@@ -5,6 +5,8 @@
       font-size: 2em;
       color: $darkBlue;
       margin: 3% 0px 1% 0px;
+      display: flex;
+      justify-content: center;
     }
     .wrapper{
       display: flex;
@@ -33,8 +35,10 @@
               color: $lightBlue;
               height: 30px;
               width: 30px;
+              transition-duration: 0.5s;
+              border: 1px solid $lightBlue;
               &:hover{
-                transition: color 0.5s ease;
+                transform: scale(1.2);
                 color: $darkBlue;
                 border: 1px solid $darkBlue;
                 cursor: pointer;

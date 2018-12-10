@@ -28,3 +28,10 @@
   margin-left: calc(50% - 65px);
   margin-bottom: 50px;
 }
+
+.scale:hover{
+  transition-duration: 0.2s;
+  transform: scale(1.3) !important;
+  color: $lightBlue;
+  cursor: pointer;
+}

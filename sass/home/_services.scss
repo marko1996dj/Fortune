@@ -4,6 +4,8 @@
     font-size: 2em;
     color: $darkBlue;
     margin: 3% 0px 1% 0px;
+    display: flex;
+    justify-content: center;
   }
   p{
     color: $dimGray;
@@ -18,21 +20,14 @@
       text-align: center;
       padding-top: 30px;
       margin: 30px;
+      transition-duration: 0.5s;
+      padding: 10px;
       &:hover{
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-        position: relative;
-        animation-name: transition-animation-in;
-        animation-fill-mode: forwards;
-        animation-duration: 0.5s;
-        &:before{
-          animation-name: transition-animation-out;
-          animation-fill-mode: forwards;
-          animation-duration: 0.5s;
-        }
+        transform: translateY(-15px);
+        cursor: pointer;
       }
     }
-
-
       h3{
         padding: 15px 0px;
       }
