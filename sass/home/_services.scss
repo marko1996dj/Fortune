@@ -40,26 +40,34 @@
 @include phone(){
   .ourServices{
     padding: 5%;
-      background-color: #dff3fa;
+    background-color: #dff3fa;
     h1{
-      font-size: 5em;
+      font-size: 4em;
     }
     p{
       font-size: 2em;
+    }
+    h3{
+      font-size: 3em;
     }
     .wrap{
       display: block;
       margin-left: 15%;
       .marketing, .consulting, .strategy{
         border: 1px solid $dimGray;
-        min-height: 600px;
+        min-height: 800px;
         padding-top: 30px;
         margin: 50px;
         padding: 10px;
         font-size: 1.5em;
         margin-bottom: 5%;
         margin-left: -8%;
+        img{
+          width: 400px;
+          height: 300px;
+        }
       }
     }
+    padding: 10% 0%;
   }
 }

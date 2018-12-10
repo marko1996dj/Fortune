@@ -35,22 +35,22 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) and
-       (-webkit-min-device-pixel-ratio: 2),
-       (min-width: 768px) and
-       (min-resolution: 192dpi) {
-         .container{
-           margin: 0% 3%;
-         }
-         .sticky{
-           margin-top: -100px;
-           position: fixed;
-           min-height: 200px;
-           z-index: 1;
-           margin-left: -5%;
-         }
-         .row{
-           width: 300px;
-           margin-left: calc(50% - 150px);
-         }
+@include phone(){
+  .container{
+    margin: 0% 3%;
+  }
+  .sticky{
+    margin-top: -200px;
+    position: fixed;
+    min-height: 200px;
+    z-index: 1;
+    margin-left: -5%;
+  }
+  .row{
+    width: 300px;
+    margin-left: calc(50% - 150px);
+  }
+  .margin{
+    margin-top: 200px;
+  }
 }

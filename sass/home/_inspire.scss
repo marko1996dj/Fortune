@@ -46,18 +46,20 @@
     h1{
       font-size: 8em;
       padding-bottom: 50px;
+            margin-left: -8%;
     }
     h3{
       font-size: 3em;
-      margin-left: -6%;
+            margin-left: -8%;
     }
     #btn{
-      margin-left: 0%;
+      -webkit-appearance: none;
+      margin-left: calc(50%-160px);
       font-size: 2em;
       height: 90px;
       width: 320px;
-      -webkit-appearance: none;
       margin-top: 50px;
+            margin-left: -3%;
     }
   }
 }

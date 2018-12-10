@@ -58,24 +58,57 @@
         margin-bottom: 15px;
       }
     }
-    .sendBtn {
-      float: right;
-      border: none;
-      border-radius: 3px;
-      height: 45px;
-      width: 100px;
-      color: white;
-      background-color: $lightBlue;
-      font-size: 1.1em;
+  }
+  .sendBtn {
+    float: right;
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    width: 100px;
+    color: white;
+    background-color: $lightBlue;
+    font-size: 1.1em;
+    margin-bottom: 5%;
 
-      &:hover {
-        transition: color 0.5s ease;
-        background-color: white;
-        border: 2px solid $lightBlue;
-        color: $lightBlue;
-        cursor: pointer;
-      }
+    &:hover {
+      transition: color 0.5s ease;
+      background-color: white;
+      border: 2px solid $lightBlue;
+      color: $lightBlue;
+      cursor: pointer;
+    }
+  }
+}
+
+@include phone(){
+  .contact {
+    background-color: $lightBlue;
+    padding: 2%;
+    text-align: center;
+    h1 {
+      margin-top: 5%;
+      font-size: 4em;
+      color: white;
     }
 
+    p {
+      font-size: 2em;
+      color: white;
+      margin-bottom: 5%;
+    }
+  }
+  .wrapper{
+    display: block;
+    .wrapLeft{
+      font-size: 2em;
+      text-align: center;
+      i{
+        padding-right: 3%;
+      }
+    }
+    .wrapRight{
+      text-align: center;
+      padding-top: 5%;
+    }
   }
 }
