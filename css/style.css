@@ -46,8 +46,8 @@
     z-index: 1;
     margin-left: -5%; }
   .row {
-    width: 200px;
-    margin-left: calc(50% - 100px); } }
+    width: 300px;
+    margin-left: calc(50% - 150px); } }
 
 body {
   font-family: "Open Sans", sans-serif; }
@@ -462,14 +462,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 5%; }
   .getOurService .wrapper {
     display: block; }
-    .getOurService .wrapper .wrap #btn {
-      -webkit-appearance: none;
-      margin-left: 70%;
-      height: 90px;
-      width: 320px;
-      font-size: 2em; }
-    .getOurService .wrapper .wrap p {
-      display: none; } }
+    .getOurService .wrapper .wrap {
+      border-radius: 10px; }
+      .getOurService .wrapper .wrap #btn {
+        -webkit-appearance: none;
+        margin-left: 70%;
+        height: 90px;
+        width: 320px;
+        font-size: 2em; }
+      .getOurService .wrapper .wrap p {
+        display: none; } }
 
 .footer {
   font-size: 0.8em;
