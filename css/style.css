@@ -466,7 +466,7 @@ h1, h2, h3, h4, h5, h6 {
       border-radius: 10px; }
       .getOurService .wrapper .wrap #btn {
         -webkit-appearance: none;
-        margin-left: 70%;
+        margin-left: calc(50% - 160px);
         height: 90px;
         width: 320px;
         font-size: 2em; }
@@ -640,6 +640,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 3em;
       margin-left: -6%; }
     .inspire #btn {
+      margin-left: 0%;
       font-size: 2em;
       height: 90px;
       width: 320px;

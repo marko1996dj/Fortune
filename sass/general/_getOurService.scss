@@ -47,7 +47,7 @@
         .wrap{
           #btn{
             -webkit-appearance: none;
-            margin-left: 70%;
+            margin-left: calc(50% - 160px);
             height: 90px;
             width: 320px;
             font-size: 2em;
