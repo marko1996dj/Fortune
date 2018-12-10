@@ -48,3 +48,10 @@
     }
   }
 }
+
+@include phone(){
+  .footer{
+    font-size: 1.4em;
+    height: 140px;
+  }
+}

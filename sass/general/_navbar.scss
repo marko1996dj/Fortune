@@ -93,3 +93,19 @@
     }
   }
 }
+
+@include phone() {
+  #navBarWrapper{
+    height: 200px;
+    width: 100%;
+    .navBar{
+      .logo{
+        font-size: 3em;
+        display: block;
+      }
+      .elements{
+        display: none;
+      }
+    }
+  }
+}

@@ -33,3 +33,22 @@
       }
     }
   }
+
+  @include phone(){
+    .getOurService{
+      h1{
+        padding-top: 2%;
+      }
+      .wrapper{
+        display: block;
+        .wrap{
+          #btn{
+            margin-left: 90%;
+          }
+          p{
+            display: none;
+          }
+        }
+      }
+    }
+  }

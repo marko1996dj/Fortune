@@ -30,3 +30,11 @@
     }
   }
 }
+
+@include phone(){
+  .clients{
+    h1{
+      font-size: 4em;
+    }
+  }
+}

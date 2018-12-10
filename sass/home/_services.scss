@@ -37,3 +37,24 @@
     width: 125px;
   }
 }
+@include phone(){
+  .ourServices{
+            background-color: #dff3fa;
+    h1{
+      font-size: 4em;
+    }
+    .wrap{
+      display: block;
+      margin-left: 15%;
+      .marketing, .consulting, .strategy{
+        border: 1px solid #DCDCDC;
+        height: 300px;
+        width: 70%;
+        text-align: center;
+        padding-top: 30px;
+        margin: 50px;
+        padding: 10px;
+      }
+    }
+  }
+}

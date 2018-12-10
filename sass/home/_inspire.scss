@@ -36,3 +36,19 @@
   }
 
 }
+
+@include phone(){
+  .inspire{
+    background-color: #dff3fa;
+    background-image: url();
+    width: 100%;
+    text-align: center;
+    h1{
+      font-size: 7em;
+      padding-bottom: 50px;
+    }
+    #btn{
+      margin-top: 50px;
+    }
+  }
+}

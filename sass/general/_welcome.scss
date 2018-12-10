@@ -48,3 +48,26 @@
     color: $dimGray;
   }
 }
+
+@include phone(){
+  .welcome{
+    h1{
+      font-size: 4em;
+    }
+    .wrap{
+      display: block;
+      .leftImage{
+        text-align: center;
+      }
+      .rightText{
+        text-align: center;
+        i{
+          margin-right: 30px;
+        }
+        p{
+          display: none;
+        }
+      }
+    }
+  }
+}

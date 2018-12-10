@@ -48,3 +48,20 @@
       margin-bottom: 10%;
   }
 }
+
+@include phone(){
+  .container{
+    .testimonials{
+      h1{
+        font-size: 4em;
+      }
+      .wrapper{
+        display: block;
+        margin-left: 25%;
+        .textbox{
+          margin: 100px;
+        }
+      }
+    }
+  }
+}

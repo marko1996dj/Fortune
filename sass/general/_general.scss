@@ -35,3 +35,20 @@
   color: $lightBlue;
   cursor: pointer;
 }
+
+@media (min-width: 768px) and
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-width: 768px) and
+       (min-resolution: 192dpi) {
+         .container{
+           margin: 0% 3%;
+         }
+         .sticky{
+
+           position: absolute;
+         }
+         .row{
+           width: 200px;
+           margin-left: calc(50% - 100px);
+         }
+}

@@ -42,3 +42,8 @@
     }
   }
 }
+@include phone(){
+  .topBar{
+    display: none;
+  }
+}
