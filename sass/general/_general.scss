@@ -6,3 +6,25 @@
 .container{
   margin: 0% 20%;
 }
+
+.sticky {
+  transition: height 0.5s ease;
+  margin-top: -43px;
+  position: fixed;
+  min-height: 100px;
+  z-index: 1;
+}
+
+.margin{
+  margin-top: 100px;
+}
+
+.row{
+  align-items: center;
+  height: 2px;
+  border: none;
+  background-color: $lightBlue;
+  width: 130px;
+  margin-left: calc(50% - 65px);
+  margin-bottom: 50px;
+}

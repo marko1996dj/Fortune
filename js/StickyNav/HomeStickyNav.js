@@ -4,12 +4,17 @@ function stickyNav() {
 
   var navbar = document.getElementById("navBarWrapper");
   var sticky = navbar.offsetTop;
+  var inspire = document.getElementById("inspire");
 
   if (window.pageYOffset > sticky) {
     navbar.classList.add("sticky");
-    console.log(sticky);
-    console.log(window.pageYOffset)
-  }else if(window.pageYOffset == 0 && sticky == 0){
+  }else{
     navbar.classList.remove("sticky");
+  }
+
+  if (window.pageYOffset > sticky) {
+    inspire.classList.add("margin");
+  }else{
+    inspire.classList.remove("margin");
   }
 }

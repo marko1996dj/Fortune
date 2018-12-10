@@ -6,14 +6,6 @@
       color: $darkBlue;
       margin: 3% 0px 1% 0px;
     }
-  .row{
-    align-items: center;
-    height: 2px;
-    border: none;
-    background-color: $lightBlue;
-    width: 110px;
-    margin:0px 0px 30px 45%;
-  }
   p{
     color: $dimGray;
     text-align: center;
@@ -24,9 +16,10 @@
 .clients-images{
   padding: 40px 0;
   display: flex;
-  flex-grow: 1;
+  justify-content: space-between;
   img{
     opacity: .7;
+    height: 50px;
     &:hover{
       opacity: 1;
     }
