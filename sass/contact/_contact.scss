@@ -47,40 +47,45 @@
     .contact-us {
       .email,
       .name {
-        width: 605px;
+        width: 100%;
         height: 45px;
         margin-bottom: 15px;
       }
-
       .textBox {
-        width: 605px;
+        width: 100%;
         height: 240px;
-        margin-bottom: 15px;
       }
     }
   }
-  .sendBtn {
-    float: right;
-    border: none;
-    border-radius: 3px;
-    height: 45px;
-    width: 100px;
-    color: white;
-    background-color: $lightBlue;
-    font-size: 1.1em;
-    margin-bottom: 5%;
+}
+.sendBtn {
+  float: right;
+  border: none;
+  border-radius: 3px;
+  height: 45px;
+  width: 100px;
+  color: white;
+  background-color: $lightBlue;
+  font-size: 1.1em;
+  margin-bottom: 5%;
 
-    &:hover {
-      transition: color 0.5s ease;
-      background-color: white;
-      border: 2px solid $lightBlue;
-      color: $lightBlue;
-      cursor: pointer;
-    }
+  &:hover {
+    transition: color 0.5s ease;
+    background-color: white;
+    border: 2px solid $lightBlue;
+    color: $lightBlue;
+    cursor: pointer;
   }
 }
 
+#googleMap{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 4%;
+}
+
 @include phone(){
+  -webkit-appearance: none;
   .contact {
     background-color: $lightBlue;
     padding: 2%;
@@ -97,18 +102,61 @@
       margin-bottom: 5%;
     }
   }
+  .contactText{
+    p{
+      font-size: 2em;
+    }
+  }
   .wrapper{
     display: block;
     .wrapLeft{
-      font-size: 2em;
+      font-size: 2.5em;
       text-align: center;
+      margin-bottom: 3%;
       i{
         padding-right: 3%;
       }
     }
     .wrapRight{
-      text-align: center;
       padding-top: 5%;
+      .contact-us,{
+        ::placeholder{
+          font-size: 2em;
+        }
+        width: 80%;
+        margin: 0 10%;
+        .email, .name{
+          height: 100px;
+          margin-bottom: 4%;
+        }
+        .textBox{
+          height: 500px;
+        }
+      }
     }
+  }
+  .sendBtn {
+    -webkit-appearance: none;
+    float: right;
+    border: none;
+    border-radius: 20px;
+    height: 90px;
+    width: 200px;
+    color: white;
+    background-color: $lightBlue;
+    font-size: 2em;
+    margin: 0 10% 5% 0;
+    &:hover {
+      transition: color 0.5s ease;
+      background-color: white;
+      border: 2px solid $lightBlue;
+      color: $lightBlue;
+      cursor: pointer;
+    }
+  }
+  #googleMap{
+    margin: 3% 5%;
+    width: 90%;
+    height: 600px;
   }
 }

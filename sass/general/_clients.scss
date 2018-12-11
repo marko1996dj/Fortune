@@ -12,20 +12,13 @@
     color: $dimGray;
     text-align: center;
   }
-}
-
-
-.clients-images{
-  padding: 40px 0;
-  display: flex;
-  justify-content: space-between;
   img{
+    height: 70px;
+    width: 117px;
+    margin: 20px;
     opacity: .7;
-    height: 50px;
-    transition-duration: 0.5s;
     &:hover{
       opacity: 1;
-      transform: scale(1.2);
       cursor: pointer;
     }
   }
@@ -41,17 +34,14 @@
       font-size: 2em;
       margin-bottom: 4%;
     }
+    margin-bottom: 15%;
   }
 }
 
 @include phone(){
   .clients-images{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     img{
       opacity: 1;
-      height: 80px;
       margin-left: 20%;
       margin-bottom: 20%;
     }

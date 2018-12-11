@@ -1,5 +1,7 @@
 @import 'general/mixin';
 @import 'general/variables';
+@import 'plugins/slick-theme';
+@import 'plugins/slick';
 @import 'general/general';
 @import 'general/font';
 @import 'general/navbar';
@@ -24,7 +26,3 @@
 @import 'portfolio/portfolio.scss';
 
 @import 'contact/contact.scss';
-
-
-@import 'plugins/slick-theme';
-@import 'plugins/slick';

@@ -51,7 +51,11 @@
 
 @include phone(){
   .footer{
-    font-size: 1.4em;
-    height: 140px;
+    padding-top: 30px;
+    font-size: 2em;
+    height: 200px;
+  }
+  .buttonUp{
+    display: none;
   }
 }
