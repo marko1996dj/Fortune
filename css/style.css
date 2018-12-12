@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%; }
   #navBarWrapper .navBar {
     padding-top: 30px;
-    margin: 0% 20% 0% 20%;
+    margin: 0 20%;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -297,6 +297,12 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    #navBarWrapper .navBar .toggle {
+      display: none; }
+      #navBarWrapper .navBar .toggle label {
+        font-size: 100px;
+        color: #00b1e4;
+        float: right; }
     #navBarWrapper .navBar .logo a {
       text-decoration: none; }
     #navBarWrapper .navBar .logo h1 {
@@ -366,13 +372,19 @@ h1, h2, h3, h4, h5, h6 {
   #navBarWrapper {
     height: 200px;
     width: 100%;
-    margin-left: 0%; }
+    margin-left: 0; }
     #navBarWrapper .navBar .logo {
       font-size: 3em;
-      margin: 2% 0% 0% -20%; }
+      margin: 2% 0 0 -20%; }
     #navBarWrapper .navBar .elements {
       display: none;
-      width: 100%; } }
+      width: 100%; }
+    #navBarWrapper .navBar .toggle {
+      display: block; }
+    #navBarWrapper .navBar #toggle:checked + .elements {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .topBar {
   background-color: #071e33;
@@ -504,10 +516,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #555555;
     text-align: center; }
   .clients img {
-    height: 70px;
-    width: 117px;
-    margin: 20px;
-    opacity: .7; }
+    margin-top: 50px;
+    height: 30px;
+    width: auto !important;
+    margin-left: 50px;
+    margin-right: 50px; }
     .clients img:hover {
       opacity: 1;
       cursor: pointer; }
@@ -559,11 +572,11 @@ h1, h2, h3, h4, h5, h6 {
     .container .testimonials .testimonials-slider .textbox {
       margin: 20px;
       height: 225px;
-      width: 280px; }
+      width: 250px; }
       .container .testimonials .testimonials-slider .textbox .text {
         font-weight: 500;
         font-style: italic;
-        padding: 30px;
+        padding: 40px 60px;
         background-color: #f1f1f1;
         color: #555555;
         border: 1px solid #dcdcdc;
@@ -925,7 +938,7 @@ h1, h2, h3, h4, h5, h6 {
     .container .ourTeam .wrapper .wrap {
       max-width: 70%;
       margin: 0 auto;
-      border: 1px solid #00b1e4;
+      border: 1px solid #a0a3a9;
       border-radius: 20px;
       margin-bottom: 3%; }
       .container .ourTeam .wrapper .wrap .socialMediaWrap {

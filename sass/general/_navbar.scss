@@ -1,18 +1,30 @@
-#navBarWrapper{
+#navBarWrapper {
   box-shadow: 0 50px 30px -30px gray;
   height: 100px;
   background-color: white;
   width: 100%;
+
   .navBar {
     padding-top: 30px;
-    margin: 0% 20% 0% 20%;
+    margin: 0 20%;
     background-color: white;
     display: flex;
     justify-content: space-between;
+
+    .toggle {
+      display: none;
+      label {
+        font-size: 100px;
+        color: $lightBlue;
+        float: right;
+      }
+    }
+
     .logo {
-      a{
+      a {
         text-decoration: none;
       }
+
       h1 {
         color: $lightBlue;
         font-size: 1.7em;
@@ -22,14 +34,17 @@
           font-size: 0.9em;
         }
       }
-      &:hover{
+
+      &:hover {
         cursor: pointer;
       }
     }
+
     .elements {
       list-style-type: none;
       display: flex;
       font-size: 0.9em;
+
       .active {
         color: $lightBlue;
       }
@@ -40,6 +55,7 @@
         color: $dimGray;
         transition-duration: 0.5s;
       }
+
       a:hover {
         color: $lightBlue;
       }
@@ -49,9 +65,11 @@
         padding-left: 25px;
       }
     }
+
     .dropdown {
       position: relative;
       margin-right: 10px;
+
       .dropbtn {
         background-color: white;
         color: $dimGray;
@@ -60,6 +78,7 @@
         font-size: 1em;
         cursor: pointer;
       }
+
       .dropdown-content {
         display: none;
         position: absolute;
@@ -67,21 +86,25 @@
         min-width: 160px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         z-index: 1;
+
         a {
           font-size: 0.9em;
           color: $dimGray;
           padding: 12px 16px;
           text-decoration: none;
           display: block;
+
           &:hover {
             color: $lightBlue;
           }
         }
       }
-      &:hover{
+
+      &:hover {
         .dropdown-content {
           display: block;
         }
+
         .dropbtn {
           transition: color 0.5s ease;
           background-color: white;
@@ -91,21 +114,28 @@
     }
   }
 }
-
 @include phone() {
-  #navBarWrapper{
+  #navBarWrapper {
     height: 200px;
     width: 100%;
-    margin-left: 0%;
-    .navBar{
-      .logo{
+    margin-left: 0;
+
+    .navBar {
+      .logo {
         font-size: 3em;
-        margin: 2% 0% 0% -20%;
+        margin: 2% 0 0 -20%;
       }
-      .elements{
+      .elements {
         display: none;
         width: 100%;
       }
+      .toggle{
+        display: block;
+      }
+      #toggle:checked + .elements{
+        display: flex;
+      }
+
     }
   }
 }
