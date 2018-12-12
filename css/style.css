@@ -1143,13 +1143,13 @@ h1, h2, h3, h4, h5, h6 {
         width: 80%;
         margin: 0 10%; }
         .wrapper .wrapRight .contact-us ::-webkit-input-placeholder {
-          font-size: 2em; }
+          font-size: 30px; }
         .wrapper .wrapRight .contact-us :-ms-input-placeholder {
-          font-size: 2em; }
+          font-size: 30px; }
         .wrapper .wrapRight .contact-us ::-ms-input-placeholder {
-          font-size: 2em; }
+          font-size: 30px; }
         .wrapper .wrapRight .contact-us ::placeholder {
-          font-size: 2em; }
+          font-size: 30px; }
         .wrapper .wrapRight .contact-us .email, .wrapper .wrapRight .contact-us .name {
           height: 100px;
           margin-bottom: 4%; }
