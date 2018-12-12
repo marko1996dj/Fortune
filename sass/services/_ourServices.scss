@@ -9,21 +9,27 @@
 
     .wrap {
       border: 1px solid #DCDCDC;
-      height: 300px;
+      height: 250px;
       text-align: center;
       padding-top: 30px;
       margin: 30px;
       width: 350px;
       color: $dimGray;
       transition-duration: 0.5s;
+
       h3 {
-        padding: 15px;
         color: $dimGray;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 0 30px;
       }
 
       .icon {
         color: $lightBlue;
-        font-size: 5em;
+        font-size: 3em;
       }
 
       &:hover {
@@ -31,6 +37,46 @@
         transform: translateY(-15px);
         cursor: pointer;
       }
+    }
+  }
+}
+@include phone() {
+  .ourServicesServices {
+    .wrapper {
+      .wrap {
+        height: 500px !important;
+        width: 700px !important;
+
+        h3 {
+          font-size: 50px;
+        }
+
+        p {
+          font-size: 40px !important;
+        }
+
+        i {
+          font-size: 80px;
+        }
+      }
+    }
+  }
+
+  .services {
+    background-color: $lightBlue;
+    padding: 2%;
+    text-align: center;
+
+    h1 {
+      margin-top: 5%;
+      font-size: 4em;
+      color: white;
+    }
+
+    p {
+      font-size: 2em;
+      color: white;
+      margin-bottom: 5%;
     }
   }
 }

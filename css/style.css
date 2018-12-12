@@ -600,7 +600,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .getOurService {
   background-color: #00b1e4;
-  padding: 3.5% 20%;
+  padding: 2% 20%;
   color: white; }
   .getOurService .wrapper {
     display: -webkit-box;
@@ -980,7 +980,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center; }
     .ourServicesServices .wrapper .wrap {
       border: 1px solid #DCDCDC;
-      height: 300px;
+      height: 250px;
       text-align: center;
       padding-top: 30px;
       margin: 30px;
@@ -990,11 +990,14 @@ h1, h2, h3, h4, h5, h6 {
       -o-transition-duration: 0.5s;
       transition-duration: 0.5s; }
       .ourServicesServices .wrapper .wrap h3 {
-        padding: 15px;
         color: #555555; }
+      .ourServicesServices .wrapper .wrap p {
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 0 30px; }
       .ourServicesServices .wrapper .wrap .icon {
         color: #00b1e4;
-        font-size: 5em; }
+        font-size: 3em; }
       .ourServicesServices .wrapper .wrap:hover {
         -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -1002,6 +1005,29 @@ h1, h2, h3, h4, h5, h6 {
         -ms-transform: translateY(-15px);
         transform: translateY(-15px);
         cursor: pointer; }
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 192dpi) {
+  .ourServicesServices .wrapper .wrap {
+    height: 500px !important;
+    width: 700px !important; }
+    .ourServicesServices .wrapper .wrap h3 {
+      font-size: 50px; }
+    .ourServicesServices .wrapper .wrap p {
+      font-size: 40px !important; }
+    .ourServicesServices .wrapper .wrap i {
+      font-size: 80px; }
+  .services {
+    background-color: #00b1e4;
+    padding: 2%;
+    text-align: center; }
+    .services h1 {
+      margin-top: 5%;
+      font-size: 4em;
+      color: white; }
+    .services p {
+      font-size: 2em;
+      color: white;
+      margin-bottom: 5%; } }
 
 .gallery .wrapper {
   display: -webkit-box;
@@ -1043,6 +1069,20 @@ h1, h2, h3, h4, h5, h6 {
     color: white; }
   .portfolio p {
     color: white; }
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 192dpi) {
+  .portfolio {
+    background-color: #00b1e4;
+    padding: 2%;
+    text-align: center; }
+    .portfolio h1 {
+      margin-top: 5%;
+      font-size: 4em;
+      color: white; }
+    .portfolio p {
+      font-size: 2em;
+      color: white;
+      margin-bottom: 5%; } }
 
 .contact {
   background-color: #00b1e4;
