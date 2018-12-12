@@ -915,6 +915,26 @@ h1, h2, h3, h4, h5, h6 {
           .container .ourTeam .wrapper .wrap .socialMediaWrap .socialMedia li a i {
             margin: 25%; }
 
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 192dpi) {
+  .container .ourTeam h1 {
+    font-size: 4em;
+    margin: 5% 0 2% 0; }
+  .container .ourTeam .wrapper {
+    display: block;
+    text-align: center; }
+    .container .ourTeam .wrapper .wrap {
+      max-width: 70%;
+      margin: 0 auto;
+      border: 1px solid #00b1e4;
+      border-radius: 20px;
+      margin-bottom: 3%; }
+      .container .ourTeam .wrapper .wrap .socialMediaWrap {
+        font-size: 50px; }
+        .container .ourTeam .wrapper .wrap .socialMediaWrap .socialMedia li {
+          height: 100px;
+          width: 100px;
+          border-radius: 15px; } }
+
 .aboutWelcome {
   margin: 4% 0px; }
   .aboutWelcome .wrap {
@@ -952,6 +972,25 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 3%;
     text-align: center;
     color: #555555; }
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 192dpi) {
+  .aboutWelcome {
+    margin: 10% 0%; }
+    .aboutWelcome h1 {
+      font-size: 4em; }
+    .aboutWelcome .wrap {
+      display: block; }
+      .aboutWelcome .wrap .leftImage {
+        text-align: center; }
+      .aboutWelcome .wrap .rightText {
+        font-size: 2em;
+        text-align: center; }
+        .aboutWelcome .wrap .rightText i {
+          margin-right: 30px; }
+        .aboutWelcome .wrap .rightText p {
+          display: none; }
+    .aboutWelcome .welcomeText {
+      font-size: 2em; } }
 
 .services {
   background-color: #00b1e4;

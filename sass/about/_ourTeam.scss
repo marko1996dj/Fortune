@@ -57,3 +57,36 @@
     }
   }
 }
+
+@include phone(){
+  .container{
+    .ourTeam{
+      h1{
+        font-size: 4em;
+        margin: 5% 0 2% 0;
+      }
+      .wrapper{
+        display: block;
+        text-align: center;
+        .wrap{
+          max-width: 70%;
+          margin: 0 auto;
+          border: 1px solid $lightBlue;
+          border-radius: 20px;
+          margin-bottom: 3%;
+          .socialMediaWrap{
+            font-size: 50px;
+            .socialMedia{
+              li{
+                height: 100px;
+                width: 100px;
+                border-radius: 15px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
