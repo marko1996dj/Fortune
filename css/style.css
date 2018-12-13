@@ -281,13 +281,13 @@ h1, h2, h3, h4, h5, h6 {
 .contact p {
   font-family: "Montserrat", sans-serif; }
 
-#navBarWrapper {
+.navBarWrapper {
   -webkit-box-shadow: 0 50px 30px -30px gray;
   box-shadow: 0 50px 30px -30px gray;
   height: 100px;
   background-color: white;
   width: 100%; }
-  #navBarWrapper .navBar {
+  .navBarWrapper .navBar {
     padding-top: 30px;
     margin: 0 20%;
     background-color: white;
@@ -297,53 +297,49 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    #navBarWrapper .navBar .toggle {
-      display: none; }
-      #navBarWrapper .navBar .toggle label {
-        font-size: 100px;
-        color: #00b1e4;
-        float: right; }
-    #navBarWrapper .navBar .logo a {
+    .navBarWrapper .navBar .logo a {
       text-decoration: none; }
-    #navBarWrapper .navBar .logo h1 {
+    .navBarWrapper .navBar .logo h1 {
       color: #00b1e4;
       font-size: 1.7em; }
-      #navBarWrapper .navBar .logo h1 span {
+      .navBarWrapper .navBar .logo h1 span {
         color: #071e33;
         font-size: 0.9em; }
-    #navBarWrapper .navBar .logo:hover {
+    .navBarWrapper .navBar .logo:hover {
       cursor: pointer; }
-    #navBarWrapper .navBar .elements {
+    .navBarWrapper .navBar .burgerMenu {
+      display: none; }
+    .navBarWrapper .navBar .elements {
       list-style-type: none;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       font-size: 0.9em; }
-      #navBarWrapper .navBar .elements .active {
+      .navBarWrapper .navBar .elements .active {
         color: #00b1e4; }
-      #navBarWrapper .navBar .elements a {
+      .navBarWrapper .navBar .elements a {
         text-decoration: none;
         font-weight: bold;
         color: #555555;
         -webkit-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s; }
-      #navBarWrapper .navBar .elements a:hover {
+      .navBarWrapper .navBar .elements a:hover {
         color: #00b1e4; }
-      #navBarWrapper .navBar .elements li {
+      .navBarWrapper .navBar .elements li {
         padding-top: 10px;
         padding-left: 25px; }
-    #navBarWrapper .navBar .dropdown {
+    .navBarWrapper .navBar .dropdown {
       position: relative;
       margin-right: 10px; }
-      #navBarWrapper .navBar .dropdown .dropbtn {
+      .navBarWrapper .navBar .dropdown .dropbtn {
         background-color: white;
         color: #555555;
         border: none;
         font-weight: bold;
         font-size: 1em;
         cursor: pointer; }
-      #navBarWrapper .navBar .dropdown .dropdown-content {
+      .navBarWrapper .navBar .dropdown .dropdown-content {
         display: none;
         position: absolute;
         background-color: white;
@@ -351,17 +347,17 @@ h1, h2, h3, h4, h5, h6 {
         -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         z-index: 1; }
-        #navBarWrapper .navBar .dropdown .dropdown-content a {
+        .navBarWrapper .navBar .dropdown .dropdown-content a {
           font-size: 0.9em;
           color: #555555;
           padding: 12px 16px;
           text-decoration: none;
           display: block; }
-          #navBarWrapper .navBar .dropdown .dropdown-content a:hover {
+          .navBarWrapper .navBar .dropdown .dropdown-content a:hover {
             color: #00b1e4; }
-      #navBarWrapper .navBar .dropdown:hover .dropdown-content {
+      .navBarWrapper .navBar .dropdown:hover .dropdown-content {
         display: block; }
-      #navBarWrapper .navBar .dropdown:hover .dropbtn {
+      .navBarWrapper .navBar .dropdown:hover .dropbtn {
         -webkit-transition: color 0.5s ease;
         -o-transition: color 0.5s ease;
         transition: color 0.5s ease;
@@ -369,22 +365,117 @@ h1, h2, h3, h4, h5, h6 {
         color: #00b1e4; }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 192dpi) {
-  #navBarWrapper {
+  .navBarWrapper {
     height: 200px;
     width: 100%;
     margin-left: 0; }
-    #navBarWrapper .navBar .logo {
+    .navBarWrapper .navBar .logo {
       font-size: 3em;
       margin: 2% 0 0 -20%; }
-    #navBarWrapper .navBar .elements {
+    .navBarWrapper .navBar .burgerMenu {
+      display: block; }
+      .navBarWrapper .navBar .burgerMenu button {
+        margin-top: 25px;
+        height: 50px;
+        width: 50px;
+        color: #00b1e4;
+        border: none;
+        background-color: white;
+        font-size: 4.5em; }
+    .navBarWrapper .navBar .elements {
       display: none;
       width: 100%; }
-    #navBarWrapper .navBar .toggle {
+  .navBarWrapperMobile {
+    background-color: white;
+    height: 600px;
+    width: 100%;
+    text-align: left;
+    margin-left: 0%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+    .navBarWrapperMobile .navBar {
       display: block; }
-    #navBarWrapper .navBar #toggle:checked + .elements {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+      .navBarWrapperMobile .navBar .logo {
+        font-size: 3em;
+        margin-left: 2%; }
+        .navBarWrapperMobile .navBar .logo a {
+          text-decoration: none; }
+        .navBarWrapperMobile .navBar .logo h1 {
+          color: #00b1e4;
+          font-size: 1.7em; }
+          .navBarWrapperMobile .navBar .logo h1 span {
+            color: #071e33;
+            font-size: 0.9em; }
+        .navBarWrapperMobile .navBar .logo:hover {
+          cursor: pointer; }
+      .navBarWrapperMobile .navBar .burgerMenu {
+        display: block; }
+        .navBarWrapperMobile .navBar .burgerMenu button {
+          margin-top: 25px;
+          margin-right: 50px;
+          float: right;
+          height: 50px;
+          width: 50px;
+          color: #00b1e4;
+          border: none;
+          background-color: white;
+          font-size: 4.5em; }
+      .navBarWrapperMobile .navBar .elements {
+        list-style-type: none;
+        font-size: 0.9em;
+        display: block; }
+        .navBarWrapperMobile .navBar .elements .active {
+          color: #00b1e4; }
+        .navBarWrapperMobile .navBar .elements a {
+          font-size: 2em;
+          text-decoration: none;
+          font-weight: bold;
+          color: #555555;
+          -webkit-transition-duration: 0.5s;
+          -o-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
+        .navBarWrapperMobile .navBar .elements a:hover {
+          color: #00b1e4; }
+        .navBarWrapperMobile .navBar .elements li {
+          padding-top: 10px;
+          padding-left: 25px;
+          margin-bottom: 30px; }
+      .navBarWrapperMobile .navBar .dropdown {
+        position: relative;
+        margin-right: 10px;
+        font-size: 2em; }
+        .navBarWrapperMobile .navBar .dropdown .dropbtn {
+          background-color: white;
+          color: #555555;
+          border: none;
+          font-weight: bold;
+          font-size: 1em;
+          cursor: pointer; }
+        .navBarWrapperMobile .navBar .dropdown .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: white;
+          min-width: 160px;
+          -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          z-index: 1; }
+          .navBarWrapperMobile .navBar .dropdown .dropdown-content a {
+            font-size: 0.9em;
+            color: #555555;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block; }
+            .navBarWrapperMobile .navBar .dropdown .dropdown-content a:hover {
+              color: #00b1e4; }
+        .navBarWrapperMobile .navBar .dropdown:hover .dropdown-content {
+          display: block; }
+        .navBarWrapperMobile .navBar .dropdown:hover .dropbtn {
+          -webkit-transition: color 0.5s ease;
+          -o-transition: color 0.5s ease;
+          transition: color 0.5s ease;
+          background-color: white;
+          color: #00b1e4; } }
 
 .topBar {
   background-color: #071e33;

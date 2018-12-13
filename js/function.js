@@ -70,3 +70,12 @@ $(function() {
   });
 });
 //Slick End
+
+//Burger Nav
+function burgerMenu(){
+  var menu = document.getElementsByClassName("navBarWrapper")[0];
+  menu.classList.add("navBarWrapperMobile");
+  menu.classList.remove("navBarWrapper");
+}
+
+//Burger Nav End
