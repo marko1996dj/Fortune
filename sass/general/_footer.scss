@@ -29,22 +29,23 @@
       }
     }
   }
-
-  .buttonUp {
-    float: right;
-    button {
-      border-radius: 3px;
-      height: 40px;
-      width: 40px;
-      color: white;
-      background-color: $lightBlue;
-      border: none;
-      transition-duration: 0.5s;
-      &:hover {
-        background-color: #0c2e8a;
-        cursor: pointer;
-        transform: scale(1.2);
-      }
+}
+.buttonUp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  button {
+    border-radius: 3px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: $lightBlue;
+    border: none;
+    transition-duration: 0.5s;
+    &:hover {
+      background-color: #0c2e8a;
+      cursor: pointer;
+      transform: scale(1.2);
     }
   }
 }

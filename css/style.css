@@ -798,24 +798,27 @@ h1, h2, h3, h4, h5, h6 {
       .footer footer p span:hover {
         cursor: pointer;
         color: white; }
-  .footer .buttonUp {
-    float: right; }
-    .footer .buttonUp button {
-      border-radius: 3px;
-      height: 40px;
-      width: 40px;
-      color: white;
-      background-color: #00b1e4;
-      border: none;
-      -webkit-transition-duration: 0.5s;
-      -o-transition-duration: 0.5s;
-      transition-duration: 0.5s; }
-      .footer .buttonUp button:hover {
-        background-color: #0c2e8a;
-        cursor: pointer;
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2); }
+
+.buttonUp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px; }
+  .buttonUp button {
+    border-radius: 3px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: #00b1e4;
+    border: none;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+    .buttonUp button:hover {
+      background-color: #0c2e8a;
+      cursor: pointer;
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 192dpi) {
   .footer {

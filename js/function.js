@@ -68,6 +68,8 @@ $(function() {
       ]
     });
   });
+
+  topFunction();
 });
 //Slick End
 
@@ -85,3 +87,17 @@ function burgerMenuClose(){
 }
 
 //Burger Nav End
+
+
+//Button up
+
+function topFunction() {
+
+  $("#toTop").on('click', function() {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 1000);
+  })
+}
+
+//Button up end
