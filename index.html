@@ -39,7 +39,14 @@
         </a>
       </div>
       <div class="burgerMenu">
-        <button type="button" name="button" onclick="burgerMenu()"><i class="fas fa-bars"></i></button>
+        <div class="open">
+
+          <button id="open" type="button" name="add" onclick="burgerMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="close">
+
+          <button id="close"type="button" name="remove" onclick="burgerMenuClose()"><i class="fas fa-times"></i></button>
+        </div>
       </div>
       <ul class="elements">
         <li><a class="active" href="index.html">Home</a></li>

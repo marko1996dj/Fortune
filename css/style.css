@@ -374,14 +374,18 @@ h1, h2, h3, h4, h5, h6 {
       margin: 2% 0 0 -20%; }
     .navBarWrapper .navBar .burgerMenu {
       display: block; }
-      .navBarWrapper .navBar .burgerMenu button {
-        margin-top: 25px;
-        height: 50px;
-        width: 50px;
-        color: #00b1e4;
-        border: none;
-        background-color: white;
-        font-size: 4.5em; }
+      .navBarWrapper .navBar .burgerMenu .open {
+        display: block; }
+        .navBarWrapper .navBar .burgerMenu .open button {
+          margin-top: 25px;
+          height: 50px;
+          width: 50px;
+          color: #00b1e4;
+          border: none;
+          background-color: white;
+          font-size: 4.5em; }
+      .navBarWrapper .navBar .burgerMenu .close {
+        display: none; }
     .navBarWrapper .navBar .elements {
       display: none;
       width: 100%; }
@@ -411,16 +415,20 @@ h1, h2, h3, h4, h5, h6 {
           cursor: pointer; }
       .navBarWrapperMobile .navBar .burgerMenu {
         display: block; }
-        .navBarWrapperMobile .navBar .burgerMenu button {
-          margin-top: 25px;
-          margin-right: 50px;
-          float: right;
-          height: 50px;
-          width: 50px;
-          color: #00b1e4;
-          border: none;
-          background-color: white;
-          font-size: 4.5em; }
+        .navBarWrapperMobile .navBar .burgerMenu .close {
+          display: block; }
+          .navBarWrapperMobile .navBar .burgerMenu .close button {
+            margin-top: 25px;
+            margin-right: 50px;
+            float: right;
+            height: 50px;
+            width: 50px;
+            color: #00b1e4;
+            border: none;
+            background-color: white;
+            font-size: 4.5em; }
+        .navBarWrapperMobile .navBar .burgerMenu .open {
+          display: none; }
       .navBarWrapperMobile .navBar .elements {
         list-style-type: none;
         font-size: 0.9em;

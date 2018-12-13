@@ -119,17 +119,22 @@
         margin: 2% 0 0 -20%;
       }
       .burgerMenu{
-        display: block;
-        button{
-          margin-top: 25px;
-
-          height: 50px;
-          width: 50px;
-          color: $lightBlue;
-          border: none;
-          background-color: white;
-          font-size: 4.5em;
-        }
+          display: block;
+          .open{
+              display: block;
+            button{
+              margin-top: 25px;
+              height: 50px;
+              width: 50px;
+              color: $lightBlue;
+              border: none;
+              background-color: white;
+              font-size: 4.5em;
+            }
+          }
+          .close{
+            display: none;
+          }
       }
       .elements {
         display: none;
@@ -171,16 +176,22 @@
       }
       .burgerMenu{
         display: block;
-        button{
-          margin-top: 25px;
-          margin-right: 50px;
-          float: right;;
-          height: 50px;
-          width: 50px;
-          color: $lightBlue;
-          border: none;
-          background-color: white;
-          font-size: 4.5em;
+        .close{
+            display: block;
+          button{
+            margin-top: 25px;
+            margin-right: 50px;
+            float: right;;
+            height: 50px;
+            width: 50px;
+            color: $lightBlue;
+            border: none;
+            background-color: white;
+            font-size: 4.5em;
+          }
+        }
+        .open{
+          display: none;
         }
       }
       .elements {

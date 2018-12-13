@@ -78,4 +78,10 @@ function burgerMenu(){
   menu.classList.remove("navBarWrapper");
 }
 
+function burgerMenuClose(){
+  var menu = document.getElementsByClassName("navBarWrapperMobile")[0];
+  menu.classList.add("navBarWrapper");
+  menu.classList.remove("navBarWrapperMobile");
+}
+
 //Burger Nav End
