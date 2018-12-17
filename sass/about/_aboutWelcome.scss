@@ -47,6 +47,15 @@
   }
 }
 
+@include breakpoint(tablet){
+  .aboutWelcome{
+    .wrap{
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
 @include breakpoint(mobileonly){
   .aboutWelcome{
     h1{

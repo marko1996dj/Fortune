@@ -37,6 +37,24 @@
     width: 125px;
   }
 }
+
+@include breakpoint(tablet){
+  .ourServices{
+    .wrap{
+      display: block;
+      margin: 0 15%;
+      .marketing, .consulting, .strategy{
+        height: 80%;
+        img{
+          width: 300px;
+          height: 200px;
+        }
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
 @include breakpoint(mobileonly){
   .ourServices{
     padding: 5%;

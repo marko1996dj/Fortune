@@ -61,24 +61,38 @@
 }
 
 @include breakpoint(tablet){
-  .container{
-    .ourTeam{
-      .wrapper{
-        display: block;
-        text-align: center;
-        .socialMediaWrap{
-          display: flex;
-          justify-content: center;
-          .socialMedia{
-            li{
-              margin: 0 15px;
-            }
+    .container{
+      .ourTeam{
+        .wrapper{
+          display: block;
+          margin-left: 5%;
+          .wrap{
+            text-align: center;
           }
         }
       }
     }
-  }
 }
+
+// @include breakpoint(tablet){
+//   .container{
+//     .ourTeam{
+//       .wrapper{
+//         display: block;
+//         text-align: center;
+//         .socialMediaWrap{
+//           display: flex;
+//           justify-content: center;
+//           .socialMedia{
+//             li{
+//               margin: 0 15px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 
 @include breakpoint(mobileonly){

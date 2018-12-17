@@ -49,6 +49,14 @@
   }
 }
 
+@include breakpoint(tablet){
+  .welcome{
+    .wrap{
+      display: block;
+      text-align: center;
+    }
+  }
+}
 
 @include breakpoint(mobileonly){
   .welcome{

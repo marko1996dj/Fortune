@@ -46,6 +46,14 @@
     }
   }
 
+  @include breakpoint(tablet){
+    .getOurService{
+      .wrapper{
+        margin-left: -33%;
+      }
+    }
+  }
+
 
 
   @include breakpoint(mobileonly){

@@ -29,3 +29,12 @@
     }
   }
 }
+
+
+@include breakpoint(tablet){
+  .wrapper{
+    .wrap{
+      margin-left: 25%;
+    }
+  }
+}

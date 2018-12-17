@@ -20,7 +20,7 @@ $(function() {
       autoplaySpeed: 3000,
       responsive: [
    {
-     breakpoint: 1024,
+     breakpoint: 1050,
      settings: {
        slidesToShow: 2,
        slidesToScroll: 2,
@@ -57,7 +57,7 @@ $(function() {
       dots: true,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1050,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
