@@ -47,7 +47,7 @@
   }
 }
 
-@include phone(){
+@include breakpoint(mobileonly){
   .aboutWelcome{
     h1{
       font-size: 4em;

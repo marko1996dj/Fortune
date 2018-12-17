@@ -35,7 +35,23 @@
   cursor: pointer;
 }
 
-@include phone(){
+@include breakpoint(desktop){
+  .container{
+    margin: 0 15%;
+  }
+}
+
+@include breakpoint(laptop){
+  .container{
+    margin: 0 10%;
+  }
+}
+
+
+
+
+
+@include breakpoint(mobileonly){
   .container{
     margin: 0% 3%;
   }

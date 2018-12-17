@@ -12,7 +12,7 @@
 }
 
 
-@include phone(){
+@include breakpoint(mobileonly){
   .portfolio {
     background-color: $lightBlue;
     padding: 2%;

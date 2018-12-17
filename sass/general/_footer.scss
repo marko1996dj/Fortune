@@ -49,7 +49,7 @@
     }
   }
 }
-@include phone(){
+@include breakpoint(mobileonly){
   .footer{
     padding-top: 30px;
     font-size: 2em;

@@ -107,7 +107,25 @@
     }
   }
 }
-@include phone() {
+
+@include breakpoint(desktop){
+  .navBarWrapper{
+    .navBar{
+      margin: 0 15%;
+  }
+}
+}
+
+@include breakpoint(laptop){
+  .navBarWrapper{
+    .navBar{
+      margin: 0 10%;
+  }
+}
+}
+
+
+@include breakpoint(mobileonly) {
   .navBarWrapper {
     height: 200px;
     width: 100%;

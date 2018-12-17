@@ -37,7 +37,7 @@
 
 }
 
-@include phone(){
+@include breakpoint(mobileonly){
   .inspire{
     background-color: #dff3fa;
     background-image: url();

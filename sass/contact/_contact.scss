@@ -84,7 +84,7 @@
   margin-bottom: 4%;
 }
 
-@include phone(){
+@include breakpoint(mobileonly){
   -webkit-appearance: none;
   .contact {
     background-color: $lightBlue;

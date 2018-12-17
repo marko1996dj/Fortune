@@ -25,7 +25,7 @@
   }
 }
 
-@include phone(){
+@include breakpoint(mobileonly){
   .clients{
     h1{
       margin-top: 10%;
@@ -39,7 +39,7 @@
   }
 }
 
-@include phone(){
+@include breakpoint(mobileonly){
   .clients-images{
     img{
       opacity: 1;

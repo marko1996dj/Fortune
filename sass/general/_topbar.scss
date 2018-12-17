@@ -42,7 +42,7 @@
     }
   }
 }
-@include phone(){
+@include breakpoint(mobileonly){
   .topBar{
     display: none;
   }

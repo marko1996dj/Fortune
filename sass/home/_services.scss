@@ -37,7 +37,7 @@
     width: 125px;
   }
 }
-@include phone(){
+@include breakpoint(mobileonly){
   .ourServices{
     padding: 5%;
     background-color: #dff3fa;

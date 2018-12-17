@@ -40,7 +40,7 @@
     }
   }
 }
-@include phone() {
+@include breakpoint(mobileonly) {
   .ourServicesServices {
     .wrapper {
       .wrap {

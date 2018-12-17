@@ -10,7 +10,9 @@
     }
     .wrapper{
       display: flex;
+      justify-content: center;
       .wrap{
+        @include column(2, 50px);
         img{
           height: 250px;
           margin-left: 25px;
@@ -58,7 +60,28 @@
   }
 }
 
-@include phone(){
+@include breakpoint(tablet){
+  .container{
+    .ourTeam{
+      .wrapper{
+        display: block;
+        text-align: center;
+        .socialMediaWrap{
+          display: flex;
+          justify-content: center;
+          .socialMedia{
+            li{
+              margin: 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint(mobileonly){
   .container{
     .ourTeam{
       h1{
